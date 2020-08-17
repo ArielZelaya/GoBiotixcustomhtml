@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ACCORDION SECTION START -->
+    <div class="container width-rem tabs-container">
+        <div class="row tab-row">
+            <div id="col-tab-1" onclick="showsection('col-tab-1','content-section-1','trianglePath1')" class="col-sm-2 col-6 col-tab selected">
+                <img class="img1-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/1icon_NO_REFINED_SUGARS.png?v=1597349818" alt="">
+                <h5 class="tab-txt">No Refined Sugars</h5>
+                <svg id="path-5" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath1" class="selected-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+            <div id="col-tab-2" onclick="showsection('col-tab-2','content-section-2','trianglePath2')" class="col-sm-2 col-6 col-tab">
+                <img class="img2-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/2icon_NON-GMO.png?v=1597349818" alt="">
+                <h5 class="tab-txt">Non<br>GMO</h5>
+                <svg id="path-2" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath2" class="hidden-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+            <div id="col-tab-3" onclick="showsection('col-tab-3','content-section-3','trianglePath3')" class="col-sm-2 col-6 col-tab">
+                <img class="img3-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/3icon_THIRD-PARTY_TESTED-11.png?v=1597349818" alt="">
+                <h5 class="tab-txt">Third-Party Tested</h5>
+                <svg id="path-3" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath3" class="hidden-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+            <div id="col-tab-4" onclick="showsection('col-tab-4','content-section-4','trianglePath4')" class="col-sm-2 col-6 col-tab">
+                <img class="img4-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/4icon_GLUTEN_FREE.png?v=1597349818" alt="">
+                <h5 class="tab-txt">Gluten<br> Free</h5>
+                <svg id="path-4" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath4" class="hidden-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+            <div id="col-tab-5" onclick="showsection('col-tab-5','content-section-5','trianglePath5')" class="col-sm-2 col-6 col-tab">
+                <img class="img5-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/5icon_Quality_Standards.png?v=1597349818" alt="">
+                <h5 class="tab-txt">Quality Standards</h5>
+                <svg id="path-5" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath5" class="hidden-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+            <div id="col-tab-6" onclick="showsection('col-tab-6','content-section-6','trianglePath6')" class="col-sm-2 col-6 col-tab">
+                <img class="img6-tab img-max-wdt" src="https://cdn.shopify.com/s/files/1/2435/3587/files/6icon_MANUFACTURED_IN_THE_USA.png?v=1597349818" alt="">
+                <h5 class="tab-txt">Manufactured in the USA</h5>
+                <svg id="path-6" class="svg-icon" width="100" height="30">
+                    <path id="trianglePath6" class="hidden-path" d="M0 100 L50 0 L100 100 Z"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="container width-rem content-container">
+           <div class="container text-center mobil-arrow">
+            <svg id="mobil-svg" class="mobil-svg-icon" width="100" height="30">
+                <path id="mobil-path" class="mobil-path-clss" d="M0 100 L50 0 L100 100 Z"></path>
+            </svg>
+           </div>
+            
+            <div id="content-section-1" class="row content-row-1 hidden-cntn selected-content h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>NO REFINED SUGARS</h3>
+                    <p> <strong class="strg-content">Looking for a low-carb all-natural solution?</strong> <br><br> We never use artificial sugars, added sweeteners, refined flours, or use ingredients containing hydrogenated oils, pesticides, herbicides, hormones or antibiotics. </p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/1-600x450_0000_no_sugars-min.jpg?v=1597681446" alt="">
+                </div>
+            </div>
+            <div id="content-section-2" class="row content-row-2 hidden-cntn h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>NON-GMO</h3>
+                    <h5></h5>
+                    <p> <strong class="strg-content">No genetic alterations have been made to any of the ingredients.</strong> <br><br>We only use the highest quality REAL food ingredients that are Organic, Sprouted, Vegan, and Paleo.
+                    </p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/2-600x450_0001_non_gmo-min.jpg?v=1597681445" alt="">
+                </div>
+            </div>
+            <div  id="content-section-3" class="row content-row-3 hidden-cntn h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>THIRD-PARTY TESTED</h3>
+                    <p> <strong class="strg-content">Compliance to all  safety, quality or performance standards.</strong> <br><br>Testing performed by a third-party accredited laboratory that CPSC has accepted to perform the specific tests for each product.</p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/3-600x450_0003_third_party-min.jpg?v=1597681446" alt="">
+                </div>
+            </div>
+            <div id="content-section-4" class="row content-row-4 hidden-cntn h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>GLUTEN FREE</h3>
+                    <p><strong class="strg-content">No gluten can be found in our products.</strong> <br><br>Cutting out wheat, rye, barley and the other grains that provide gluten eliminates some of the key sources of complex carbohydrates needed in a balanced diet.</p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/4-600x450_0005_gluten_free-min.jpg?v=1597681446" alt="">
+                </div>
+            </div>
+            <div id="content-section-5" class="row content-row-5 hidden-cntn h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>QUALITY STANDARDS</h3>
+                    <p> <strong class="strg-content">All of our products are produced in a GMP certified facility.</strong> <br><br> Produced under strict quality standards and inspection in a GMP certified facility, right here in the USA! </p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/5-600x450_0002_quality-min.jpg?v=1597681445" alt="">
+                </div>
+            </div>
+            <div id="content-section-6" class="row content-row-6 hidden-cntn h400">
+                <div class="col-sm-6 text-content">
+                   <div class="txt-content-wrapper">
+                    <h3>MANUFACTURED IN THE USA</h3>
+                    <h5></h5>
+                    <p> <strong class="strg-content">Only organic and plant-based ingredients.</strong> <br> <br> Every ingredient and component of our brand is produced in the USA, providing jobs for hundreds of farmers.</p>
+                   </div>
+                </div>
+                <div class="col-sm-6 no-pd">
+                    <img class="img-content" src="https://cdn.shopify.com/s/files/1/2435/3587/files/6-600x450_0004_made_in_usa-min.jpg?v=1597681445" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ACCORDION SECTION END -->
+    <style>
+        .no-pd{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+        .width-rem{
+            max-width: 64rem;
+        }
+        .img-max-wdt{
+            max-width: 80%;
+            border-radius: 50%;
+        }
+        .img1-tab{
+            background-color:#4fa5c6 ;
+        }
+        #trianglePath1{
+            fill:#4fa5c6 ;
+            
+        }
+        .img2-tab{
+            background-color:#146596 ;
+        }
+        #trianglePath2{
+            fill:#146596 ;
+    }
+        .img3-tab{
+            background-color:#51a842  ;
+        }
+        #trianglePath3{
+           fill:#51a842  ;
+    }
+        .img4-tab{
+            background-color:#ffbc53 ;
+        }
+        #trianglePath4{
+            fill:#ffbc53 ;
+    }
+        .img5-tab{
+            background-color:#ad4ec4 ;
+        }
+        #trianglePath5{
+            fill:#ad4ec4 ;
+    }
+        .img6-tab{
+            background-color:#cc1f51 ;
+        }
+        #trianglePath6{
+            fill:#cc1f51 ;
+    }
+    .hidden-path{
+        display: none;
+    }
+    .selected-path{
+        display: inline-flex !important;
+    }
+    
+        .tab-txt{
+            margin-top: 30px;
+        }
+        .img-content{
+            max-width: 100%;
+        }
+        /* .content-container{
+            margin-top: 60px;
+        } */
+        .col-tab{
+            cursor: pointer;
+        }
+    .txt-content-wrapper{
+        margin-top: 70px;
+        margin-bottom: 33px;
+        margin-left: 40px;
+        margin-right: 40px;
+        color:#ffffff;
+    }
+        .content-row-1{
+            background-color: #4fa5c6;
+        }
+        .content-row-2{
+            background-color:#146596 ;
+        }
+        .content-row-3{
+            background-color: #51a842 ;
+        }
+        .content-row-4{
+            background-color: #ffbc53 ;
+        }
+        .content-row-5{
+            background-color: #ad4ec4;
+        }
+        .content-row-6{
+            background-color: #cc1f51 ;
+        }
+        .col-tab{
+            text-align: center;
+        }
+        .selected img{
+            border: 5px solid #a69fa2;
+        }
+        .selected-content{
+            display: inline-flex !important;
+        }
+        .hidden-cntn{
+            display: none;
+        }
+        .svg-icon{
+            margin-top: 60px;
+        }
+        .txt-content-wrapper h3{
+            margin-bottom: 30px;
+        }
+        .mobil-arrow{
+            display: none !important;
+        }
+        @media only screen and (max-width: 375px) {
+            #mobil-path{
+                fill: #4fa5c6;
+            }
+            .mobil-arrow{
+                display: block !important;
+            }
+            .content-container{
+                margin-top: 40px;
+            }
+            .svg-icon{
+                display: none !important;
+            }
+        }
+        .strg-content{
+            font-size: 18px;
+        }
+        .container-fluid.text-center.title--main.section--keybenefits .container{
+            max-width: 100% !important;
+}
+        /* .h400{
+            height: 400px;
+        } */
+    </style>
+    <script>
+        function showsection(tab,content,path){
+            console.log(tab);
+            console.log(content);
+        var slctab = document.getElementById(tab);
+        var slcntn = document.getElementById(content);
+        var slctpath = document.getElementById(path);
+        var path = document.getElementById('mobil-path');
+        for(i=1;i<=6;i++){
+            var tabs = document.getElementById('col-tab-'+i);
+            var paths = document.getElementById('trianglePath'+i);
+            var content = document.getElementById('content-section-'+i);
+            paths.classList.remove("selected-path");
+            paths.classList.add("hidden-path");
+            content.classList.remove("selected-content");
+            content.classList.add("hidden-cntn");
+            tabs.classList.remove("selected");
+            console.log("borrado"+i);  
+        }
+        switch(tab){
+            case 'col-tab-1':
+                document.getElementById('mobil-path').style.fill = '#4fa5c6'
+                break;
+            case 'col-tab-2':
+                document.getElementById('mobil-path').style.fill = '#146596'
+                break;
+            case 'col-tab-3':
+                document.getElementById('mobil-path').style.fill = '#51a842 '
+                break;
+            case 'col-tab-4':
+                document.getElementById('mobil-path').style.fill = '#ffbc53'
+                break;
+            case 'col-tab-5':
+                document.getElementById('mobil-path').style.fill = '#ad4ec4'
+                break;
+            case 'col-tab-6':
+                document.getElementById('mobil-path').style.fill = '#cc1f51 '
+                break;
+        }
+        slctab.classList.add("selected");
+        slcntn.classList.add("selected-content");
+        slctpath.classList.add("selected-path");
+        
+        }
+    </script>
+</body>
+
+
+</html>
